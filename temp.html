@@ -1,0 +1,35 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap Vertical Tabs</title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap.vertical-tabs.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>Bootstrap Vertical Tabs <small> | Demo</small></h1>
+    </div>
+
+    <div class="row" style="min-height:600px;">
+
+        
+            
+          <ul class="nav nav-tabs tabs-left">
+          {% assign p_s = site.posts | sort:number %}
+          {% for post in p_s %}
+              <li>{{ post.content }}</li><br>
+          {% endfor %}
+          </ul>
+
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
